@@ -4,7 +4,7 @@
   "type": "module",
   "private": true,
   "dependencies": {
-    "@dummy/package": "git+ssh://git@github.com/SonuMondal06/dummy-package.git#v1.1"
+    "@dummy/package": "git+ssh://git@github.com/SonuMondal06/dummy-package.git#v1.2"
   },
   "devDependencies": {
     "@types/bun": "latest"
