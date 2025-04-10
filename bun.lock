@@ -3,6 +3,9 @@
   "workspaces": {
     "": {
       "name": "dummy-repo",
+      "dependencies": {
+        "@dummy/package": "git+ssh://git@github.com/SonuMondal06/dummy-package.git#v1.1",
+      },
       "devDependencies": {
         "@types/bun": "latest",
       },
@@ -12,6 +15,8 @@
     },
   },
   "packages": {
+    "@dummy/package": ["dummy-package@git+ssh://git@github.com/SonuMondal06/dummy-package.git#a5b203cab130ad742ebdb44e3b5bd3f683d757f0", {}, "a5b203cab130ad742ebdb44e3b5bd3f683d757f0"],
+
     "@types/bun": ["@types/bun@1.2.9", "", { "dependencies": { "bun-types": "1.2.9" } }, "sha512-epShhLGQYc4Bv/aceHbmBhOz1XgUnuTZgcxjxk+WXwNyDXavv5QHD1QEFV0FwbTSQtNq6g4ZcV6y0vZakTjswg=="],
 
     "@types/node": ["@types/node@22.14.0", "", { "dependencies": { "undici-types": "~6.21.0" } }, "sha512-Kmpl+z84ILoG+3T/zQFyAJsU6EPTmOCj8/2+83fSN6djd6I4o7uOuGIH6vq3PrjY5BGitSbFuMN18j3iknubbA=="],
